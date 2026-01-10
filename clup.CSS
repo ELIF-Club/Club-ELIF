@@ -1,0 +1,284 @@
+/* background: linear-gradient(100deg, #e20aa5, #a6eecd); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+     
+}
+
+/* Top Bar */
+.top-bar {
+     color: #fff;
+    padding: 8px 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+     background-color: #240322;
+     
+}
+.social-vertical {
+    position: absolute;
+    top: 3%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+  
+}
+
+/* Navbar */
+.navbar {
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.logo img {
+    width: 150px;
+    background-color: #ff7a00;
+    background-size:5PX ;
+        box-shadow: 0 4px 10px #e3a9f1d8;
+
+    border-radius:70% ;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ff7a00;
+}
+
+.btn-inscription {
+    background: #ff7a00;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+        box-shadow: 0 4px 10px #e3a9f1d8;
+
+}
+
+/* Hero Section */
+.hero {
+  
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    color: #fff;
+}
+.navbar,div.hero{
+     background-color: #4b0a47;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.hero-text span {
+    color: #ff7a00;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 18px;
+    text-align:justify;
+}
+
+.btn-contact {
+    background:#ff7a00;
+    color: #2b1c5e;
+    border: none;
+    padding: 14px 26px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+        box-shadow: 0 4px 10px #e3a9f1d8;
+
+}
+
+.hero-image img {
+    width: 500px;
+    border-radius: 35%;
+        box-shadow: 0 7px 20px #e3a9f1d8;
+
+}
+
+
+.social-vertical a {
+    width: 30px;
+    height: 30px;
+   border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px #e3a9f1d8;
+    transition: 0.3s;
+}
+
+.social-vertical img {
+    width: 25px;
+    height: 25px;
+}
+
+.social-vertical a:hover {
+    transform: scale(1.1);
+}
+.nav {
+    background: #ff7a00 #e3a9f1d8;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+        box-shadow: 0 4px 10px #ff7a00;
+
+
+}
+/* Mission Section */
+.mission {
+    padding: 80px 40px;
+    background: #f8f8f8;
+}
+
+.mission-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Text */
+.mission-text {
+    flex: 1;
+}
+
+.mission-text h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #4b0a47;
+}
+
+.mission-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #010101;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+div .motivation {
+ font-size:22PX ;
+ color:  #4b0a47;
+ letter-spacing:1px ;
+
+ }
+
+/* Image */
+.mission-image {
+    flex: 1;
+    position: relative;
+}
+
+.mission-image img {
+    
+     border-radius: 60% 40% 60% 40%;
+  overflow: hidden;
+  border: 8px solid #4b0a47;;
+  background: white;
+  width: 100%;
+  height: 100%;
+  box-shadow: 20PX 10px 30px #e292f7d8;
+
+}
+
+.impact {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 40px;
+  background: #f9f9f9;
+}
+
+.impact-card {
+  width: 380px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  background-color: #ff7a00;
+    box-shadow:  20PX 20px 30px #e292f7d8;
+}
+
+.icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.impact-card h2 {
+  color: #0833c1; 
+  margin-bottom: 12px;
+}
+
+.impact-card p {
+  color: #000000;
+  font-size: 17px;
+  line-height: 1.6;
+}
+ 
+.quote-section {
+ background: linear-gradient(100deg, #e292f7d8, #0833c1);
+  transform: skewY(-3deg);
+  padding: 120px 20px;
+}
+
+.quote-content {
+  transform: skewY(3deg); /* تصحيح الميل */
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  color: #1f2a44;
+}
+
+.quote-mark {
+  font-size: 80px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.quote-text {
+  font-size: 22px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.author {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.organization {
+  font-size: 16px;
+  opacity: 0.8;
+}
