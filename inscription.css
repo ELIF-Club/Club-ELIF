@@ -1,0 +1,75 @@
+.inscription-form-section{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4b0a47, #1e90ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.form-container{
+    background: #ffffff;
+    width: 900px;
+    max-width: 100%;
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    animation: fadeUp 1s ease;
+}
+
+.form-container h1{
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #4b0a47;
+}
+
+.form-container h1 span{
+    color: #ff7a00;
+}
+
+.form-container p{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.form-row{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.form-row input,
+textarea{
+    width: 100%;
+    padding: 18px 25px;
+    border-radius: 40px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea{
+    border-radius: 25px;
+    height: 120px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+.submit-btn{
+    background: #ff7a00;
+    color: #fff;
+    border: none;
+    padding: 18px 50px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(255,122,0,0.5);
+}

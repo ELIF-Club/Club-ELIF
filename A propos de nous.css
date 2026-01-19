@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at top left, #ff7a00 0%, transparent 40%),
+        radial-gradient(circle at bottom right, #1e90ff 0%, transparent 40%),
+        linear-gradient(135deg, #3a0f5c, #1b0838);
+}
+
+.page{
+    position: relative;
+    max-width: 780px;
+    width: 90%;
+    padding: 70px 60px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 30px;
+    text-align: center;
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.25),
+        inset 0 0 0 2px rgba(255,122,0,0.15);
+
+    overflow: hidden;
+}
+
+.page::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #ff7a00, #1e90ff, #8e44ad);
+}
+
+.page::after{
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    right: -80px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #ff7a00, #8e44ad);
+    border-radius: 50%;
+    opacity: 0.15;
+}
+
+.page h1{
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 35px;
+
+    background: linear-gradient(90deg, #3a0f5c, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 22px;
+}
+
+.page p span{
+    color: #ff7a00;
+    font-weight: 600;
+}
+
+.page{
+    animation: reveal 1.1s ease forwards;
+}
+
+@keyframes reveal{
+    from{
+        opacity: 0;
+        transform: scale(0.95) translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
